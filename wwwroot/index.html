@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -11,71 +11,70 @@
     <title>GhostMelodie developer and programmer account. Virtual office assistant 3D.</title>
 
     <style type="text/css">
-        @media screen and (orientation:portrait) {
-
-            #header {
-                height: 5%;
-            }
-
-            #nav {
-                top: 5%;
-                width: 12%;
-            }
-
-            main {
-                top: 5%;
-                /* Set this to the height of the header */
-                left: 12%;
-            }
-
-            /*IE6 fix*/
-            * html body {
-                padding: 5% 0 0 12%;
-                /* Set the first value to the height of the header and last value to the width of the nav */
-            }
-
-        }
-
-        @media screen and (orientation:landscape) {
-
-            #header {
-                height: 10%;
-            }
-
-            #nav {
-                top: 10%;
-                width: 12%;
-            }
-
-            main {
-                top: 10%;
-                /* Set this to the height of the header */
-                left: 12%;
-            }
-
-            /*IE6 fix*/
-            * html body {
-                padding: 10% 0 0 12%;
-                /* Set the first value to the height of the header and last value to the width of the nav */
-            }
-
-        }
-
-        /* Common Style */
-
         body {
             margin: 0;
-            padding: 0;
-            overflow: hidden;
-            height: 100%;
-            max-height: 100%;
             font-family: Sans-serif;
-            font-size: 1vw;
             line-height: 1.5em;
         }
 
+        .sidebar {
+            margin: 0;
+            padding: 20px 0px 0px 0px;
+            width: 200px;
+            background-color: rgb(234, 169, 243);
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            color: black;
+            text-decoration: none;
+        }
+
+        .sidebar a {
+            display: block;
+            color: black;
+            padding: 4px 4px 4px 16px;
+            margin: 0;
+            text-decoration: none;
+
+        }
+
+        .sidebar a.active {
+            background-color: rgb(234, 169, 243);
+            color: rgb(0, 0, 0);
+        }
+
+        .sidebar a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+        div.content {
+            margin-left: 200px;
+            padding: 0px 0px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .sidebar a {
+                float: left;
+            }
+
+            div.content {
+                margin-left: 0;
+            }
+        }
+
+        .innertube {
+            margin: 2ex;
+            /* Provides padding for the content */
+        }
+
         #header {
-            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
@@ -85,64 +84,8 @@
             text-align: right;
         }
 
-        #nav {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            overflow: auto;
-            /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
-            background: rgb(234, 169, 243);
-        }
-
-        #logo {
-            margin: 2ex;
-        }
-
-        main {
-            position: fixed;
-            /* Set this to the height of the header */
-            right: 0;
-            bottom: 0;
-            overflow: auto;
-            background: #fff;
-        }
-
-        .innertube {
-            margin: 2ex;
-            /* Provides padding for the content */
-        }
-
-        p {
-            color: #555;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul a {
-            color: black;
-            text-decoration: none;
-        }
-
-        * html main {
-            height: 100%;
-            width: 100%;
-        }
-
         .center {
             text-align: center;
-        }
-
-        .center>div,
-        .center>table
-
-        /* insert any other block-level elements here */
-            {
-            margin-left: auto;
-            margin-right: auto;
         }
 
         .profile {
@@ -157,32 +100,62 @@
             color: rgb(234, 169, 243);
             background-color: rgb(234, 169, 243);
         }
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <header id="header">
-        <div style="float: left; margin:1ex 2ex;">
-            <h6>Virtual office assistant 3D. Developer Account.</h6>
-        </div>
-        <div id="logo">
-            <h1>☁🌧⛈ GhostMelodie 🌤⛅☁</h1>
-        </div>
-    </header>
+    <!-- Facebook Tag Start -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/fr_CA/sdk.js#xfbml=1&version=v6.0"></script>
+    <!-- Facebook Tag  End -->
 
-    <main>
+    <div class="sidebar">
+        <a class="active" href="#toppage">
+            <h3>Home</h3>
+        </a>
+        <a href="#Facebook">Facebook</a>
+        <a href="#Twitter">Twitter</a>
+        <a href="#Instagram">Instagram</a>
+        <a href="#Youtube">Youtube</a>
+        <a href="#Spotify">Spotify</a>
+        <a href="#BingMaps">Bing Maps</a>
+        <a href="#Discord">Discord</a>
+        <a href="#LinkedIn">LinkedIn</a>
+        <a class="active">
+            <h3>Also On</h3>
+        </a>
+        <a href="https://github.com/GhostMelodie" target="_blank">GitHub</a>
+        <a href="https://docs.microsoft.com/en-us/users/ghostmelodie" target="_blank">Microsoft Docs</a>
+        <a href="https://mixer.com/GhostMelodie" target="_blank">Mixer</a>
+        <a href="https://www.twitch.tv/ghostmelodie" target="_blank">Twitch</a>
+        <a href="https://live.xbox.com/en-US/Profile?gamertag=GhostMelodie" target="_blank">Xbox</a>
+        <a href="https://player.me/ghostmelodie/" target="_blank">Player.me</a>
+        <a href="https://www.trueachievements.com/gamer/GhostMelodie" target="_blank">TrueAchievements</a>
+        <a href="https://gamerdvr.com/gamer/ghostmelodie" target="_blank">GamerDVR</a>
+        <a href="https://mygamerprofile.net/gamer/ghostmelodie" target="_blank">MyGamerProfile</a>
+    </div>
 
-        <!-- Facebook Tag Start -->
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous"
-            src="https://connect.facebook.net/fr_CA/sdk.js#xfbml=1&version=v6.0"></script>
-        <!-- Facebook Tag  End -->
+    <div class="content">
+        <a id="toppage"></a>
+        <header id="header">
+            <div id="logo">
+                <h1>☁🌧⛈ GhostMelodie 🌤⛅☁</h1>
+            </div>
+        </header>
 
         <div class="innertube">
 
             <div class="center">
-                <h2>Welcome ☁🤪🌥<br /> I stick many thing together...</h2>
+                <h2>☁🤪🌥<br />GhostMelodie is my Virtual Office Assistant 3D.</h2>
                 <hr class="bar" />
             </div>
 
@@ -453,7 +426,7 @@
             <div>
                 <footer class="center">
                     <hr />
-                    <div class="container">
+                    <div>
                         &copy; All Time - GhostMelodie #GeekBackFromHell 🔥🤓🌋
                     </div>
                 </footer>
@@ -461,41 +434,7 @@
 
         </div>
 
-    </main>
-
-    <nav id="nav">
-        <div class="innertube">
-            <h3>Section</h3>
-            <ul>
-                <li><a href="#Facebook">Facebook</a></li>
-                <li><a href="#Twitter">Twitter</a></li>
-                <li><a href="#Instagram">Instagram</a></li>
-                <li><a href="#Youtube">Youtube</a></li>
-                <li><a href="#Spotify">Spotify</a></li>
-                <li><a href="#BingMaps">Bing Maps</a></li>
-                <li><a href="#Discord">Discord</a></li>
-                <li><a href="#LinkedIn">LinkedIn</a></li>
-            </ul>
-            <h3>Also On</h3>
-            <ul>
-                <li><a href="https://github.com/GhostMelodie" target="_blank">GitHub</a></li>
-                <li><a href="https://docs.microsoft.com/en-us/users/ghostmelodie" target="_blank">Microsoft Docs</a>
-                </li>
-                <li><a href="https://mixer.com/GhostMelodie" target="_blank">Mixer</a></li>
-                <li><a href="https://www.twitch.tv/ghostmelodie" target="_blank">Twitch</a></li>
-                <li><a href="https://live.xbox.com/en-US/Profile?gamertag=GhostMelodie" target="_blank">Xbox</a></li>
-                <li><a href="https://player.me/ghostmelodie/" target="_blank">Player.me</a></li>
-                <li><a href="https://www.trueachievements.com/gamer/GhostMelodie" target="_blank">TrueAchievements</a>
-                </li>
-                <li><a href="https://gamerdvr.com/gamer/ghostmelodie" target="_blank">GamerDVR</a></li>
-                <li><a href="https://mygamerprofile.net/gamer/ghostmelodie" target="_blank">MyGamerProfile</a></li>
-            </ul>
-            <h3>Start Chat</h3>
-            <ul>
-                <li><a href="https://m.me/GhostMelodieF4cebo0k" target="_blank">Messenger (en/fr)</a></li>
-            </ul>
-        </div>
-    </nav>
+    </div>
 
 </body>
 
