@@ -318,6 +318,19 @@
                 </center>
             </div>
 
+            <style type="text/css">
+                .youtube {
+                    width: 500px;
+                    height: 315px;
+                }
+                @media screen and (max-width: 400px) {
+                    .youtube {
+                        width: 350px;
+                        height: 220px;
+                    }
+                }
+            </style>
+
             <div class="center">
                 <a id="Youtube"></a>
                 <h2>Youtube</h2>
@@ -326,7 +339,7 @@
                         target="_blank">Youtube
                         Chanel</a>
                 </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ViPSa7arOns" frameborder="0"
+                <iframe class="youtube" src="https://www.youtube.com/embed/ViPSa7arOns" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 <hr class="bar" />
@@ -346,19 +359,39 @@
                     frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 <br />
                 <a href="https://open.spotify.com/track/0RZVAhyB8vhxQz6ITjiuyA?si=33haGIGhSY6wd6suQxsWXA"
-                    target="_blank">https://open.spotify.com/track/0RZVAhyB8vhxQz6ITjiuyA?si=33haGIGhSY6wd6suQxsWXA</a>
+                    target="_blank">Nightwish Noise</a>
                 <hr class="bar" />
             </div>
+
+            <style type="text/css">
+                .bingmap {
+                    width: 500px;
+                    height: 400px;
+                }
+                .bingmapcadre {
+                    width: 500px;
+                }
+                @media screen and (max-width: 400px) {
+                    .bingmap {
+                        width: 350px;
+                        height: 280px;
+                    }
+
+                    .bingmapcadre {
+                        width: 350px;
+                    }
+                }
+            </style>
 
             <div class="center">
                 <center>
                     <a id="BingMaps"></a>
                     <h2>Bing Maps Go: 🎫🎠🎡🎢🎪🎭</h2>
                     <div>
-                        <iframe width="500" height="400" frameborder="0"
+                        <iframe class="bingmap" frameborder="0"
                             src="https://www.bing.com/maps/embed?h=400&w=500&cp=45.52124938676725~-73.53542256355285&lvl=14&typ=d&sty=h&src=SHELL&FORM=MBEDV8"
                             scrolling="no"></iframe>
-                        <div style="white-space: nowrap; text-align: center; width: 500px; padding: 6px 0;">
+                        <div class="bingmapcadre" style="white-space: nowrap; text-align: center; padding: 6px 0;">
                             <a id="largeMapLink"
                                 href="https://www.bing.com/maps?cp=45.52124938676725~-73.53542256355285&amp;sty=h&amp;lvl=14&amp;FORM=MBEDLD"
                                 target="_blank">Show a larger map</a> &nbsp; | &nbsp;
